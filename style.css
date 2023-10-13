@@ -1,0 +1,47 @@
+
+*
+{
+    margin:0;
+    padding:0;
+  
+}
+section
+{
+    position:relative;
+    width: 100%;
+    height: 100vh;
+}
+section .box 
+{
+   position: absolute;
+ top:0;
+left:0;
+width:100%;
+height:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+section .box.box2
+
+{
+    background-color: #cdeb36;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+}
+
+section .box h2{
+    color:#cdeb36;
+font-size:60px;
+text-align:center;
+animation: newyear 3s infinite;
+}
+section .box.box2 h2
+{
+color:orange;
+}
+@keyframes newyear
+{
+    0%,35%{transform:translateY(-70%);}
+    35%,70%{transform:translateY(70%);}
+    70%,100%{transform:translateY(70%);}
+}
